@@ -11,4 +11,4 @@ light = lightsensor.read_u16()
 # Turn reading into percentage
 lightpercent = round(light / 65535 * 100, 2)
 
-print(lightpercent)
+print(str(lightpercent) + "%")
