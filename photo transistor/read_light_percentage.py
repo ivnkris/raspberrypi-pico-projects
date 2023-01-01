@@ -9,6 +9,6 @@ lightsensor = ADC(Pin(26))
 light = lightsensor.read_u16()
 
 # Turn reading into percentage
-lightpercent = light / 65535 * 100
+lightpercent = round(light / 65535 * 100, 2)
 
 print(lightpercent)
