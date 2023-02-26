@@ -5,6 +5,6 @@ import time
 tilt = Pin(26, Pin.IN, Pin.PULL_DOWN)
 
 while True:
-    time.sleep(0.01)
+    time.sleep(0.1)
     if tilt.value() == 1:
         print("I tilted!")

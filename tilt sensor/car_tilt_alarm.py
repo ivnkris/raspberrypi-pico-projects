@@ -9,7 +9,7 @@ buzzer = PWM(Pin(13))
 buzzer.freq(1000)
 
 while True:
-    time.sleep(0.01)
+    time.sleep(0.1)
     if tilt.value() == 1:
         print("***TILT DETECTED!***")
         buzzer.duty_u16(10000)
